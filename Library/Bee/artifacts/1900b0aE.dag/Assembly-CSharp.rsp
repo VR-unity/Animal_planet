@@ -441,6 +441,18 @@
 "Assets/Samples/Ubiq/0.4.0/Samples/_Common/UI/Scripts/TextPageIndicator.cs"
 "Assets/Samples/Ubiq/0.4.0/Samples/_Common/UI/Scripts/UserPanelController.cs"
 "Assets/Samples/Ubiq/0.4.0/Samples/_Common/UI/Scripts/WristMenuInvoker.cs"
+"Assets/Scripts/Bird.cs"
+"Assets/Scripts/FloatingText.cs"
+"Assets/Scripts/GameManager.cs"
+"Assets/Scripts/Ice.cs"
+"Assets/Scripts/MainCamera.cs"
+"Assets/Scripts/NextButton.cs"
+"Assets/Scripts/Pig.cs"
+"Assets/Scripts/RetryButton.cs"
+"Assets/Scripts/Slingshot.cs"
+"Assets/Scripts/StillBird.cs"
+"Assets/Scripts/Stone.cs"
+"Assets/Scripts/Wood.cs"
 -langversion:9.0
 
 /deterministic
