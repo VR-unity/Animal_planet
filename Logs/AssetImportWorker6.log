@@ -344,3 +344,38 @@ Received Import Request.
   path: Assets/Scripts/Bird.cs
   artifactKey: Guid(8b22438f0fe44c94b816bf346c3939ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/Bird.cs using Guid(8b22438f0fe44c94b816bf346c3939ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37382b75f53e085620b01dad924a6445') in 0.002863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 60281.271797 seconds.
+  path: Assets/Samples/Ubiq/0.4.0/Samples/_Common/Firework/Sparks.mat
+  artifactKey: Guid(b90cf499e8283f849a26de0dcef6557b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Ubiq/0.4.0/Samples/_Common/Firework/Sparks.mat using Guid(b90cf499e8283f849a26de0dcef6557b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '393987a52a6cf4ab6b15365f50649c25') in 0.470124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.554866 seconds.
+  path: Assets/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE2.mat
+  artifactKey: Guid(9baa6e6151fb8a142b545fafb52c362f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE2.mat using Guid(9baa6e6151fb8a142b545fafb52c362f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a02aa08c188394c3ad32881505f3d7e') in 0.020824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.081035 seconds.
+  path: Assets/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Sparks RIFLE3.mat
+  artifactKey: Guid(e177f0751f2e83247a552614d8363cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Sparks RIFLE3.mat using Guid(e177f0751f2e83247a552614d8363cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e1ddf61b90efb52dfde84414cdfe6c3') in 0.031101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/JMO Assets/WarFX/Desktop/Materials/Impacts/WFX_M_Sparks Metal.mat
+  artifactKey: Guid(f694f40c6e4a192408764416581ed108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/WarFX/Desktop/Materials/Impacts/WFX_M_Sparks Metal.mat using Guid(f694f40c6e4a192408764416581ed108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7295ae9c9d7d07e459c96c426fd5735e') in 0.024262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Sparks RIFLE1.mat
+  artifactKey: Guid(682571fd6d8f0ec498a7e7050e573b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Sparks RIFLE1.mat using Guid(682571fd6d8f0ec498a7e7050e573b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28435d5766d1350e987bd952f61764f7') in 0.030157 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

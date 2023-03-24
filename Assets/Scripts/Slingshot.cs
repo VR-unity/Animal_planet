@@ -24,9 +24,9 @@ public class Slingshot : MonoBehaviour
         }
         else
         {
-            Line.SetPosition(1, new Vector3(Bird.transform.position.x - 0.5f, Bird.transform.position.y, Bird.transform.position.z + 1f));
-            Line.SetPosition(2, new Vector3(Bird.transform.position.x, Bird.transform.position.y, Bird.transform.position.z - 1f));
-            Line.SetPosition(3, new Vector3(Bird.transform.position.x + 0.5f, Bird.transform.position.y, Bird.transform.position.z + 1f));
+            Line.SetPosition(1, new Vector3(Bird.transform.position.x - 0.3f, Bird.transform.position.y, Bird.transform.position.z + 0.1f));
+            Line.SetPosition(2, new Vector3(Bird.transform.position.x, Bird.transform.position.y, Bird.transform.position.z - 0.3f));
+            Line.SetPosition(3, new Vector3(Bird.transform.position.x + 0.3f, Bird.transform.position.y, Bird.transform.position.z + 0.1f));
         }
         Line.SetPosition(4, RightSide.transform.position);
     }

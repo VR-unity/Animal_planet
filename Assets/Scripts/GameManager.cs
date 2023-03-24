@@ -31,23 +31,25 @@ public class GameManager : MonoBehaviour
     public AudioSource LevelFailed;
     public AudioSource LevelCompleted;
 
+
     void Start()
     {
         if (Instance == null)
         {
             Instance = this;
         }
-        int level = SceneManager.GetActiveScene().buildIndex;
-        HighscoreText.text = GetHighscore(level).ToString();
+        // int level = SceneManager.GetActiveScene().buildIndex;
+        // HighscoreText.text = GetHighscore(level).ToString();
         SetNewBird();
     }
 
     void Update()
     {
+        // Debug.Log(GameObject.FindGameObjectsWithTag("Pig").Length);
         if (!IsLevelCleared && GameObject.FindGameObjectsWithTag("Pig").Length == 0)
         {
             IsLevelCleared = true;
-            LevelCleared.Play();
+            // LevelCleared.Play();
             if (!ActiveTurn)
             {
                 FinishLevel();
@@ -64,7 +66,7 @@ public class GameManager : MonoBehaviour
 
         int level = SceneManager.GetActiveScene().buildIndex;
         Score += amount;
-        ScoreText.text = Score.ToString();
+        // ScoreText.text = Score.ToString();
         GameObject floatingTextObj = Instantiate(FloatingText, position, Quaternion.identity);
         FloatingText floatingText = floatingTextObj.GetComponent<FloatingText>();
         floatingText.UpdateText(amount.ToString(), textColor);
@@ -76,10 +78,10 @@ public class GameManager : MonoBehaviour
         RemainingBirds--;
         if (RemainingBirds >= 0)
         {
-            GameObject bird = Instantiate(SlingshotBird, new Vector3(Slingshot.transform.position.x - 0.08f, Slingshot.transform.position.y + 3.82f, Slingshot.transform.position.z - 0.29f), Quaternion.identity);
+            GameObject bird = Instantiate(SlingshotBird, new Vector3(Slingshot.Hook.transform.position.x, Slingshot.Hook.transform.position.y, Slingshot.Hook.transform.position.z), Quaternion.identity);
             bird.GetComponent<Bird>().DestructionTime = BirdDestructionTime;
             Slingshot.Bird = bird;
-            Camera.main.GetComponent<MainCamera>().Bird = bird;
+            // Camera.main.GetComponent<MainCamera>().Bird = bird;
 
             foreach (StillBird stillBird in FindObjectsOfType<StillBird>())
             {
@@ -91,7 +93,7 @@ public class GameManager : MonoBehaviour
                 for (int i = 0; i < RemainingBirds; i++)
                 {
                     GameObject stillBird = Instantiate(StillBird, new Vector3(0, 0, 0), Quaternion.identity);
-                    stillBird.transform.Find("Bird Body").transform.position = new Vector3(-2.5f * (i + 1), 0, -3.19f);
+                    stillBird.transform.position = new Vector3(-0.5f * (i + 0.5f), 0, -1.19f);
                     if (i % 2 == 0)
                     {
                         stillBird.GetComponent<StillBird>().WaitForSeconds = 0.45f;
@@ -142,7 +144,7 @@ public class GameManager : MonoBehaviour
 
         foreach (StillBird stillBird in FindObjectsOfType<StillBird>())
         {
-            AddScore(10000, stillBird.transform.Find("Bird Body").transform.position, Color.red);
+            AddScore(10000, stillBird.transform.position, Color.red);
         }
         foreach (Bird bird in FindObjectsOfType<Bird>())
         {
