@@ -17,22 +17,26 @@ public class Bird : MonoBehaviour
 
     void FixedUpdate()
     {
-        Debug.Log(_isPressed);
+        // Debug.Log(_isPressed);
         if (_isPressed && !_isFired && !GameManager.Instance.IsLevelCleared)
         {
             Vector3 mousePosition = Input.mousePosition;
-            Debug.Log(mousePosition);
-            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, transform.position.z));
-            if (worldPosition.y >= 0.2f && worldPosition.y <= 8f)
+            
+            Vector3 dir = transform.position - Camera.main.transform.position;
+            
+            Vector3 normardir = Vector3.Project(dir, Camera.main.transform.forward);
+            
+            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, normardir.magnitude));
+            if (worldPosition.y >= 0.02f && worldPosition.y <= 0.8f)
             {
-                Rb.position = worldPosition;
+            Rb.position = worldPosition;
             }
         }
     }
 
     void OnMouseDown()
     {
-        Debug.Log(_isFired);
+        // Debug.Log(_isFired);
         if (_isFired || GameManager.Instance.IsLevelCleared)
         {
             return;
