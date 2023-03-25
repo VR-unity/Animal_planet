@@ -38,8 +38,8 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
         }
-        // int level = SceneManager.GetActiveScene().buildIndex;
-        // HighscoreText.text = GetHighscore(level).ToString();
+        int level = SceneManager.GetActiveScene().buildIndex;
+        HighscoreText.text = GetHighscore(level).ToString();
         SetNewBird();
     }
 
@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
         if (!IsLevelCleared && GameObject.FindGameObjectsWithTag("Pig").Length == 0)
         {
             IsLevelCleared = true;
-            // LevelCleared.Play();
+            LevelCleared.Play();
             if (!ActiveTurn)
             {
                 FinishLevel();
@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
 
         int level = SceneManager.GetActiveScene().buildIndex;
         Score += amount;
-        // ScoreText.text = Score.ToString();
+        ScoreText.text = Score.ToString();
         GameObject floatingTextObj = Instantiate(FloatingText, position, Quaternion.identity);
         FloatingText floatingText = floatingTextObj.GetComponent<FloatingText>();
         floatingText.UpdateText(amount.ToString(), textColor);

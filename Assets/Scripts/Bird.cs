@@ -26,8 +26,9 @@ public class Bird : MonoBehaviour
             
             Vector3 normardir = Vector3.Project(dir, Camera.main.transform.forward);
             
-            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, normardir.magnitude));
-            if (worldPosition.y >= 0.02f && worldPosition.y <= 0.8f)
+            // Vector3 worldPosition = Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, normardir.magnitude));
+            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, 1.5f));
+            if (worldPosition.y >= 0.02f && worldPosition.y <= 2f)
             {
             Rb.position = worldPosition;
             }
@@ -71,8 +72,8 @@ public class Bird : MonoBehaviour
         GetComponent<TrailRenderer>().enabled = false;
         if (!collision.collider.CompareTag("Ground"))
         {
-            GameObject feathers = Instantiate(Feathers, transform.position, Quaternion.identity);
-            Destroy(feathers, 2);
+            // GameObject feathers = Instantiate(Feathers, transform.position, Quaternion.identity);
+            // Destroy(feathers, 2);
             if (!BirdCollision.isPlaying)
             {
                 BirdCollision.Play();
@@ -95,7 +96,7 @@ public class Bird : MonoBehaviour
 
         GameManager.Instance.SetNewBird();
         GameManager.Instance.BirdDestroy.Play();
-        Instantiate(FeatherExplosion, transform.position, Quaternion.identity);
+        // Instantiate(FeatherExplosion, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }
