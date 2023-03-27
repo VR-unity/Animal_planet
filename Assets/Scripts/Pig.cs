@@ -6,7 +6,7 @@ public class Pig : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.relativeVelocity.magnitude > 5f)
+        if (collision.relativeVelocity.magnitude > 20f && (this.GetComponent<MyNetworkedObject>().control == false))
         {
             Destroy();
         }
@@ -17,7 +17,7 @@ public class Pig : MonoBehaviour
         GameManager.Instance.PigHit.Play();
         GameManager.Instance.PigDestroy.Play();
         GameObject smoke = Instantiate(Smoke, transform.position, Quaternion.identity);
-        GameManager.Instance.AddScore(5000, transform.position, Color.green);
+        GameManager.Instance.AddScore(5000, transform.position, Color.cyan);
         Destroy(smoke, 3);
         Destroy(gameObject);
     }

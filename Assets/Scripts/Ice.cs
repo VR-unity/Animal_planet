@@ -6,7 +6,7 @@ public class Ice : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.relativeVelocity.magnitude > 8)
+        if (collision.relativeVelocity.magnitude > 18 && (this.GetComponent<MyNetworkedObject>().control == false))
         {
             Destroy();
         }

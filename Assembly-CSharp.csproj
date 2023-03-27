@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Bots\Control\BotsManager.cs" />
+     <Compile Include="Assets\JMO Assets\WarFX\Scripts\CFX_LightIntensityFade.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\PanelSwitcher.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\LeaveRoomButton.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\SetNameButton.cs" />
@@ -44,35 +45,54 @@
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\AvatarPagePanelController.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Avatar\FloatingHandsAnimator.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\PeersPanelController.cs" />
+     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\MinimalExamples\Addressing\HelloWorldCubeColour.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\JoinRoomButton.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\TextPageIndicator.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Avatar\FloatingAvatar.cs" />
+     <Compile Include="Assets\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\BrowseMenuControl.cs" />
+     <Compile Include="Assets\Scripts\Wood.cs" />
+     <Compile Include="Assets\Scripts\Bird.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Readme.cs" />
+     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Bots\Control\Messaging.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\PagePanel.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Scenes\OutdoorScene\AudioBox.cs" />
+     <Compile Include="Assets\Scripts\RetryButton.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\TextEntryKeyboardListener.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Avatar\AvatarAudioStatusIndicator.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
+     <Compile Include="Assets\Scripts\FloatingText.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Avatar\AvatarNameIndicator.cs" />
+     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Bots\BotAgent.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\RoomSceneManager\RoomSceneManager.cs" />
+     <Compile Include="Assets\Scripts\StillBird.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Interaction\FollowGraspable.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Boids\BoidsManager.cs" />
+     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_Wall.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\BrowsePanelController.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\BrowseMenuControlJoinButton.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\MinimalExamples\Logging\LoggingDiagnostics.cs" />
+     <Compile Include="Assets\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
+     <Compile Include="Assets\Scripts\Slingshot.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\MinimalExamples\Networking\ThroughputBenchmark.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\MinimalExamples\Addressing\HelloWorldCube.cs" />
+     <Compile Include="Assets\Scripts\Ice.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\Keyboard.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\UserPanelController.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Avatar\TexturedAvatar.cs" />
+     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_DeleteAfterDelay.cs" />
+     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_RandomDir.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\SocialMenu.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\AvatarPagePanelControl.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\CurrentRoomPanelControl.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\PageIndicator.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Bots\Control\BotsController.cs" />
+     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\CurrentRoomPanel.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Bots\UI\BotsManagerControl.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Bots\Bot.cs" />
@@ -87,7 +107,10 @@
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\MinimalExamples\Spawning\PrefabsMenu.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Boids\BoidState.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\TextEntry.cs" />
+     <Compile Include="Assets\Scripts\Pig.cs" />
+     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_Translate.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\MinimalExamples\Questionnaire\Questionnaire.cs" />
+     <Compile Include="Assets\Scripts\Stone.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Scenes\SceneInfo.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\NewRoomButton.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Bots\UI\BotInfoGizmo.cs" />
@@ -96,6 +119,7 @@
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\WristMenuInvoker.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\MinimalExamples\Rooms\Scripts\RoomClientJoinHelper.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Scenes\OutdoorScene\FireworksBox.cs" />
+     <Compile Include="Assets\Scripts\MainCamera.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\NameManager\NameManager.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\SocialMenuIndicatorSpawner.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Boids\Boids.cs" />
@@ -103,16 +127,37 @@
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Bots\BotsConfig.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Bots\BotsMonitor.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Bots\UI\BotsControlPanel.cs" />
+     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Firework\Firework.cs" />
-     <Compile Include="Assets\pen.cs" />
+     <Compile Include="Assets\Scripts\NextButton.cs" />
+     <Compile Include="Assets\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Scripts\MyNetworkedObject.cs" />
+     <Compile Include="Assets\Scripts\Spawner1.cs" />
+     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft.shader" />
+     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft Scroll.shader" />
+     <None Include="Assets\JMO Assets\WarFX\_Effects\MuzzleFlashes\!MuzzleFlash Differences.txt" />
+     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Alpha-Specular TintColor.shader" />
      <None Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Scenes\OutdoorScene\Audio\License.txt" />
+     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Add Scroll.shader" />
+     <None Include="Assets\JMO Assets\WarFX\_Effects (Mobile)\MuzzleFlashes\!MuzzleFlash Differences.txt" />
      <None Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Materials\FadeLeft.shader" />
+     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle Add A8.shader" />
+     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Smoke Scroll.shader" />
+     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle Multiply A8.shader" />
      <None Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Avatar\LICENSE.txt" />
+     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend Scroll.shader" />
      <None Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Scenes\OutdoorScene\Nature Pack\LICENSE.txt" />
      <None Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Avatar\Assets\Changelog.txt" />
+     <None Include="Assets\SimpleLowPolyNature\Readme.txt" />
      <None Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Avatar\Assets\LICENSE.txt" />
+     <None Include="Assets\Little_Ghost2\Documentation\Documentation.txt" />
+     <None Include="Assets\SimpleLowPolyNature\Shaders\SimpleWater.shader" />
+     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle AddSoft A8.shader" />
+     <None Include="Assets\JMO Assets\WarFX\!WarFX Readme.txt" />
      <None Include="Assets\Samples\Ubiq\0.4.0\Samples\Readme.txt" />
+     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Alpha-Diffuse TintColor.shader" />
      <None Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Firework\LICENSE.txt" />
+     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend NoSoftParticles.shader" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -371,20 +416,20 @@
     <Reference Include="SIPSorcery">
         <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\PackageCache\com.ucl.ubiq@c9ddf0fa52\Runtime\Voip\Implementations\Dotnet\Plugins\SIPSorcery.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="ReportGeneratorMerged">
         <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-    </Reference>
-    <Reference Include="DnsClient">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\PackageCache\com.ucl.ubiq@c9ddf0fa52\Runtime\Voip\Implementations\Dotnet\Plugins\DnsClient.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="SIPSorceryMedia.Abstractions">
         <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\PackageCache\com.ucl.ubiq@c9ddf0fa52\Runtime\Voip\Implementations\Dotnet\Plugins\SIPSorceryMedia.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="DnsClient">
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\PackageCache\com.ucl.ubiq@c9ddf0fa52\Runtime\Voip\Implementations\Dotnet\Plugins\DnsClient.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
         <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\PackageCache\com.ucl.ubiq@c9ddf0fa52\Runtime\Plugins\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
@@ -866,6 +911,12 @@
     <Reference Include="Unity.XR.Management">
         <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.XR.Oculus.Editor">
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Oculus">
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
         <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
@@ -874,12 +925,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
         <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Oculus.Editor">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Oculus">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

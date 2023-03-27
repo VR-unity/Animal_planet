@@ -144,11 +144,11 @@ public class GameManager : MonoBehaviour
 
         foreach (StillBird stillBird in FindObjectsOfType<StillBird>())
         {
-            AddScore(10000, stillBird.transform.position, Color.red);
+            AddScore(10000, stillBird.transform.position, Color.white);
         }
         foreach (Bird bird in FindObjectsOfType<Bird>())
         {
-            AddScore(10000, bird.transform.position, Color.red);
+            AddScore(10000, bird.transform.position, Color.white);
         }
 
         yield return new WaitForSeconds(1);
@@ -174,7 +174,7 @@ public class GameManager : MonoBehaviour
                 NewHighscore.SetActive(true);
             }
 
-            LevelWon.transform.Find("Level Text").GetComponent<Text>().text = $"1-{level + 1}";
+            LevelWon.transform.Find("Level Text").GetComponent<Text>().text = "WIN!";
             LevelWon.transform.Find("Score Amount Text").GetComponent<Text>().text = score.ToString();
             HighscoreText.text = highscore.ToString();
             LevelWon.transform.Find("Highscore Amount Text").GetComponent<Text>().text = highscore.ToString();

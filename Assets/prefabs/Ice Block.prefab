@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3546039979404069051}
   - component: {fileID: 8789809952400970636}
   - component: {fileID: -8105328502777695805}
+  - component: {fileID: 1149698802941800957}
   m_Layer: 0
   m_Name: Ice Block
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 5993704297489910061}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.01, y: 2.2, z: 15}
-  m_LocalScale: {x: 1, y: 4, z: 2}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -114,7 +115,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &-8105328502777695805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,3 +129,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IceShatter: {fileID: 7176896029591346994, guid: 13990f11b69f840df978f8204adfe471, type: 3}
+--- !u!114 &1149698802941800957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5993704297489910061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699887428126ecd4c8e67b43198ff985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -5,13 +5,14 @@ public class Wood : MonoBehaviour
 	public GameObject WoodShatter;
     public AudioSource WoodCollision;
 
+
     void OnCollisionEnter(Collision collision)
 	{
         if (collision.collider.CompareTag("Bird"))
         {
             WoodCollision.Play();
         }
-		if (collision.relativeVelocity.magnitude > 13.5f)
+		if (collision.relativeVelocity.magnitude > 18.5f && (this.GetComponent<MyNetworkedObject>().control == false))
 		{
             Destroy();
 		}
