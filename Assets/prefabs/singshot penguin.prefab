@@ -702,7 +702,7 @@ MonoBehaviour:
   SlingshotRelease: {fileID: -1519382794451662409}
   Flying: {fileID: 0}
   BirdCollision: {fileID: -1310698063597291146}
-  ReleaseTime: 0.5
+  ReleaseTime: 0.15
   DestructionTime: 5
 --- !u!1 &8190247064763016343
 GameObject:

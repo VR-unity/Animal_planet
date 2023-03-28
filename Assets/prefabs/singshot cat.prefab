@@ -404,8 +404,8 @@ GameObject:
   - component: {fileID: 5685813438376073817}
   - component: {fileID: 5865675500550909186}
   - component: {fileID: 5504390438163988663}
-  - component: {fileID: 5357864395946849651}
   - component: {fileID: -3333438451710836418}
+  - component: {fileID: 5357864395946849651}
   m_Layer: 0
   m_Name: singshot cat
   m_TagString: cat
@@ -921,25 +921,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5357864395946849651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4226839902090587731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b22438f0fe44c94b816bf346c3939ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Rb: {fileID: 1896322453135263171}
-  Slingshot: {fileID: 5865675500550909186}
-  SlingshotRelease: {fileID: 5504390438163988663}
-  Flying: {fileID: 0}
-  BirdCollision: {fileID: 5685813438376073817}
-  ReleaseTime: 0.5
-  DestructionTime: 5
 --- !u!145 &-3333438451710836418
 SpringJoint:
   m_ObjectHideFlags: 0
@@ -964,6 +945,25 @@ SpringJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &5357864395946849651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4226839902090587731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b22438f0fe44c94b816bf346c3939ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Rb: {fileID: 1896322453135263171}
+  Slingshot: {fileID: 5865675500550909186}
+  SlingshotRelease: {fileID: 5504390438163988663}
+  Flying: {fileID: 0}
+  BirdCollision: {fileID: 5685813438376073817}
+  ReleaseTime: 0.15
+  DestructionTime: 5
 --- !u!1 &4226839902090587737
 GameObject:
   m_ObjectHideFlags: 0
