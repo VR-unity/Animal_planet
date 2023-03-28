@@ -8,15 +8,26 @@ public class Wood : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
 	{
-        if (collision.collider.CompareTag("Bird"))
+        if (collision.collider.CompareTag("sheep")||collision.collider.CompareTag("duck")||collision.collider.CompareTag("cat")||collision.collider.CompareTag("penguin"))
         {
             WoodCollision.Play();
         }
-		if (collision.relativeVelocity.magnitude > 18.5f && (this.GetComponent<MyNetworkedObject>().control == false))
+		if (GameObject.FindGameObjectWithTag("Building").GetComponent<StartBuildingButton>().startbuilding == false && collision.relativeVelocity.magnitude > 8.5f && (this.GetComponent<MyNetworkedObject>().control == false))
 		{
             Destroy();
 		}
 	}
+    void Update() 
+    {
+        if (GameObject.FindGameObjectWithTag("Building").GetComponent<StartBuildingButton>().startbuilding == true)
+        {
+            this.gameObject.GetComponent<Rigidbody>().drag = 10;
+        }
+        else
+        {
+            this.gameObject.GetComponent<Rigidbody>().drag = 1;
+        }
+    }
 
 	private void Destroy()
 	{

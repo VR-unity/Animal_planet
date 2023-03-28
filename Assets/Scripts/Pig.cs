@@ -6,9 +6,25 @@ public class Pig : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.relativeVelocity.magnitude > 20f && (this.GetComponent<MyNetworkedObject>().control == false))
+        if (GameObject.FindGameObjectWithTag("Building").GetComponent<StartBuildingButton>().startbuilding == false && collision.relativeVelocity.magnitude > 4f && (this.GetComponent<MyNetworkedObject>().control == false))
         {
             Destroy();
+        }
+        // else if (GameObject.FindGameObjectWithTag("Building").GetComponent<StartBuildingButton>().startbuilding == true && collision.relativeVelocity.magnitude > 0)
+        // {
+        //     this.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX|RigidbodyConstraints.FreezePositionZ;
+        // }
+    }
+
+    void Update() 
+    {
+        if (GameObject.FindGameObjectWithTag("Building").GetComponent<StartBuildingButton>().startbuilding == true)
+        {
+            this.gameObject.GetComponent<Rigidbody>().drag = 10;
+        }
+        else
+        {
+            this.gameObject.GetComponent<Rigidbody>().drag = 1;
         }
     }
 

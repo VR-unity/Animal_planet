@@ -11,4 +11,16 @@ public class Stone : MonoBehaviour
             StoneCollision.Play();
         }
     }
+
+    void Update() 
+    {
+        if (GameObject.FindGameObjectWithTag("Building").GetComponent<StartBuildingButton>().startbuilding == true)
+        {
+            this.gameObject.GetComponent<Rigidbody>().drag = 10;
+        }
+        else
+        {
+            this.gameObject.GetComponent<Rigidbody>().drag = 1;
+        }
+    }
 }

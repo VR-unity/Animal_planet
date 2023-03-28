@@ -8,6 +8,13 @@ TagManager:
   - Teleport
   - Bird
   - Ground
+  - FxTemporaire
+  - Building
+  - New tag
+  - sheep
+  - duck
+  - cat
+  - penguin
   layers:
   - Default
   - TransparentFX

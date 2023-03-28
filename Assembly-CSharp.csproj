@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\Bird.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Readme.cs" />
      <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
+     <Compile Include="Assets\Scripts\StartBuildingButton.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Bots\Control\Messaging.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\PagePanel.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Scenes\OutdoorScene\AudioBox.cs" />
@@ -89,12 +90,15 @@
      <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_RandomDir.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\SocialMenu.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\AvatarPagePanelControl.cs" />
+     <Compile Include="Assets\Scripts\MyNetworkedObject.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\CurrentRoomPanelControl.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\PageIndicator.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Bots\Control\BotsController.cs" />
+     <Compile Include="Assets\Scripts\Spawner.cs" />
      <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\CurrentRoomPanel.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Bots\UI\BotsManagerControl.cs" />
+     <Compile Include="Assets\Scripts\Spawner1.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Bots\Bot.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\SocialMenuRequestHandler.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\NetworkedMainMenuIndicator.cs" />
@@ -130,9 +134,7 @@
      <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Firework\Firework.cs" />
      <Compile Include="Assets\Scripts\NextButton.cs" />
-     <Compile Include="Assets\Scripts\Spawner.cs" />
-     <Compile Include="Assets\Scripts\MyNetworkedObject.cs" />
-     <Compile Include="Assets\Scripts\Spawner1.cs" />
+     <Compile Include="Assets\Scripts\SlingSnapping.cs" />
      <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft.shader" />
      <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft Scroll.shader" />
      <None Include="Assets\JMO Assets\WarFX\_Effects\MuzzleFlashes\!MuzzleFlash Differences.txt" />

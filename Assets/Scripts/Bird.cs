@@ -4,8 +4,8 @@ using UnityEngine;
 public class Bird : MonoBehaviour
 {
     public Rigidbody Rb;
-    public GameObject Feathers;
-    public GameObject FeatherExplosion;
+    // public GameObject Feathers;
+    // public GameObject FeatherExplosion;
     public AudioSource Slingshot;
     public AudioSource SlingshotRelease;
     public AudioSource Flying;
@@ -28,7 +28,7 @@ public class Bird : MonoBehaviour
             
             // Vector3 worldPosition = Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, normardir.magnitude));
             Vector3 worldPosition = Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, 1.5f));
-            if (worldPosition.y >= 0.02f && worldPosition.y <= 2f)
+            if (worldPosition.y >= 0.02f && worldPosition.y <= 8f)
             {
             Rb.position = worldPosition;
             }
@@ -63,7 +63,7 @@ public class Bird : MonoBehaviour
         GetComponent<TrailRenderer>().enabled = true;
         _isFired = true;
         SlingshotRelease.Play();
-        Flying.Play();
+        // Flying.Play();
         StartCoroutine(Release());
     }
 
@@ -94,7 +94,7 @@ public class Bird : MonoBehaviour
     {
         yield return new WaitForSeconds(DestructionTime);
 
-        GameManager.Instance.SetNewBird();
+        // GameManager.Instance.SetNewBird();
         GameManager.Instance.BirdDestroy.Play();
         // Instantiate(FeatherExplosion, transform.position, Quaternion.identity);
         Destroy(gameObject);

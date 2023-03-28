@@ -10,8 +10,8 @@ public class GameManager : MonoBehaviour
     public Text ScoreText;
     public Text HighscoreText;
     public GameObject FloatingText;
-    public GameObject SlingshotBird;
-    public GameObject StillBird;
+    // public GameObject SlingshotBird;
+    // public GameObject StillBird;
     public GameObject LevelWon;
     public GameObject LevelLost;
     public Slingshot Slingshot;
@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
         }
         int level = SceneManager.GetActiveScene().buildIndex;
         HighscoreText.text = GetHighscore(level).ToString();
-        SetNewBird();
+        // SetNewBird();
     }
 
     void Update()
@@ -50,10 +50,7 @@ public class GameManager : MonoBehaviour
         {
             IsLevelCleared = true;
             LevelCleared.Play();
-            if (!ActiveTurn)
-            {
-                FinishLevel();
-            }
+            FinishLevel();
         }
     }
 
@@ -72,62 +69,44 @@ public class GameManager : MonoBehaviour
         floatingText.UpdateText(amount.ToString(), textColor);
     }
 
-    public void SetNewBird()
-    {
-        ActiveTurn = false;
-        RemainingBirds--;
-        if (RemainingBirds >= 0)
-        {
-            GameObject bird = Instantiate(SlingshotBird, new Vector3(Slingshot.Hook.transform.position.x, Slingshot.Hook.transform.position.y, Slingshot.Hook.transform.position.z), Quaternion.identity);
-            bird.GetComponent<Bird>().DestructionTime = BirdDestructionTime;
-            Slingshot.Bird = bird;
-            // Camera.main.GetComponent<MainCamera>().Bird = bird;
+    // public void SetNewBird()
+    // {
+    //     ActiveTurn = false;
+    //     RemainingBirds--;
+    //     if (RemainingBirds >= 0)
+    //     {
+    //         GameObject bird = Instantiate(SlingshotBird, new Vector3(Slingshot.Hook.transform.position.x, Slingshot.Hook.transform.position.y, Slingshot.Hook.transform.position.z), Quaternion.identity);
+    //         bird.GetComponent<Bird>().DestructionTime = BirdDestructionTime;
+    //         Slingshot.Bird = bird;
+    //         // Camera.main.GetComponent<MainCamera>().Bird = bird;
 
-            foreach (StillBird stillBird in FindObjectsOfType<StillBird>())
-            {
-                Destroy(stillBird.gameObject);
-            }
+    //         foreach (StillBird stillBird in FindObjectsOfType<StillBird>())
+    //         {
+    //             Destroy(stillBird.gameObject);
+    //         }
 
-            if (RemainingBirds > 0)
-            {
-                for (int i = 0; i < RemainingBirds; i++)
-                {
-                    GameObject stillBird = Instantiate(StillBird, new Vector3(0, 0, 0), Quaternion.identity);
-                    stillBird.transform.position = new Vector3(-0.5f * (i + 0.5f), 0, -1.19f);
-                    if (i % 2 == 0)
-                    {
-                        stillBird.GetComponent<StillBird>().WaitForSeconds = 0.45f;
-                    }
-                }
-            }
-        }
+    //         if (RemainingBirds > 0)
+    //         {
+    //             for (int i = 0; i < RemainingBirds; i++)
+    //             {
+    //                 GameObject stillBird = Instantiate(StillBird, new Vector3(0, 0, 0), Quaternion.identity);
+    //                 stillBird.transform.position = new Vector3(-0.5f * (i + 0.5f), 0, -1.19f);
+    //                 if (i % 2 == 0)
+    //                 {
+    //                     stillBird.GetComponent<StillBird>().WaitForSeconds = 0.45f;
+    //                 }
+    //             }
+    //         }
+    //     }
 
-        FinishLevel();
-    }
+    //     FinishLevel();
+    // }
 
     private void FinishLevel()
     {
         if (IsLevelCleared)
         {
-            if (RemainingBirds >= 0)
-            {
-                StartCoroutine(AddFinalScores());
-            }
-            else
-            {
-                EndLevel(true);
-            }
-        }
-        else if (RemainingBirds < 0)
-        {
-            if (FindObjectsOfType<Pig>().All(p => p.GetComponent<Rigidbody>().velocity.magnitude < 0.1f))
-            {
-                EndLevel(false);
-            }
-            else
-            {
-                StartCoroutine(CheckIfPigsStoppedMoving());
-            }
+            EndLevel(true);
         }
     }
 
@@ -174,7 +153,7 @@ public class GameManager : MonoBehaviour
                 NewHighscore.SetActive(true);
             }
 
-            LevelWon.transform.Find("Level Text").GetComponent<Text>().text = "WIN!";
+            LevelWon.transform.Find("Level Text").GetComponent<Text>().text = "FINISHED!";
             LevelWon.transform.Find("Score Amount Text").GetComponent<Text>().text = score.ToString();
             HighscoreText.text = highscore.ToString();
             LevelWon.transform.Find("Highscore Amount Text").GetComponent<Text>().text = highscore.ToString();

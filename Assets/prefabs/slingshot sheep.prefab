@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 106736, guid: 46398a79a336cba4c9c8998b2bff56c2, type: 3}
       propertyPath: m_TagString
-      value: Bird
+      value: sheep
       objectReference: {fileID: 0}
     - target: {fileID: 406704, guid: 46398a79a336cba4c9c8998b2bff56c2, type: 3}
       propertyPath: m_LocalRotation.x
@@ -110,7 +110,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6942290536787776959}
   serializedVersion: 2
-  m_Mass: 5
+  m_Mass: 2
   m_Drag: 0
   m_AngularDrag: 0.25
   m_UseGravity: 1
@@ -182,7 +182,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.13095239
+        value: 0.19688562
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -333,7 +333,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6942290536787776959}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 80e903ac5d00d46c088ca7c8b030eb04, type: 3}
@@ -627,7 +627,7 @@ SpringJoint:
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 0.706, y: 1.361, z: -2.348}
   serializedVersion: 2
-  m_Spring: 500
+  m_Spring: 100
   m_Damper: 0.2
   m_MinDistance: 0
   m_MaxDistance: 0
