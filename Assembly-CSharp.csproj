@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4e099dc0-6107-fb1b-84ff-eb1b2775bf2c}</ProjectGuid>
+    <ProjectGuid>{fe1ad9ab-ce5a-6a95-f89e-95340b51bd32}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -52,25 +52,19 @@
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Avatar\FloatingAvatar.cs" />
      <Compile Include="Assets\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\BrowseMenuControl.cs" />
-     <Compile Include="Assets\Scripts\Wood.cs" />
-     <Compile Include="Assets\Scripts\Bird.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Readme.cs" />
      <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
      <Compile Include="Assets\Scripts\StartBuildingButton.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Bots\Control\Messaging.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\PagePanel.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Scenes\OutdoorScene\AudioBox.cs" />
-     <Compile Include="Assets\Scripts\RetryButton.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\TextEntryKeyboardListener.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Avatar\AvatarAudioStatusIndicator.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
-     <Compile Include="Assets\Scripts\FloatingText.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Avatar\AvatarNameIndicator.cs" />
      <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Bots\BotAgent.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\RoomSceneManager\RoomSceneManager.cs" />
-     <Compile Include="Assets\Scripts\StillBird.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Interaction\FollowGraspable.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Boids\BoidsManager.cs" />
      <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_Wall.cs" />
@@ -78,10 +72,8 @@
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\BrowseMenuControlJoinButton.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\MinimalExamples\Logging\LoggingDiagnostics.cs" />
      <Compile Include="Assets\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
-     <Compile Include="Assets\Scripts\Slingshot.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\MinimalExamples\Networking\ThroughputBenchmark.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\MinimalExamples\Addressing\HelloWorldCube.cs" />
-     <Compile Include="Assets\Scripts\Ice.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\Keyboard.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\UserPanelController.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Avatar\TexturedAvatar.cs" />
@@ -109,12 +101,11 @@
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Avatar\SpeechIndicator\SpeechIndicator.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\NameTextEntry.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\MinimalExamples\Spawning\PrefabsMenu.cs" />
+     <Compile Include="Assets\Scripts\SlingSnapping.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Boids\BoidState.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\TextEntry.cs" />
-     <Compile Include="Assets\Scripts\Pig.cs" />
      <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_Translate.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\MinimalExamples\Questionnaire\Questionnaire.cs" />
-     <Compile Include="Assets\Scripts\Stone.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Scenes\SceneInfo.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\NewRoomButton.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Bots\UI\BotInfoGizmo.cs" />
@@ -123,7 +114,6 @@
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\WristMenuInvoker.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\MinimalExamples\Rooms\Scripts\RoomClientJoinHelper.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Scenes\OutdoorScene\FireworksBox.cs" />
-     <Compile Include="Assets\Scripts\MainCamera.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\NameManager\NameManager.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\UI\Scripts\SocialMenuIndicatorSpawner.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Boids\Boids.cs" />
@@ -133,8 +123,6 @@
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\Bots\UI\BotsControlPanel.cs" />
      <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
      <Compile Include="Assets\Samples\Ubiq\0.4.0\Samples\_Common\Firework\Firework.cs" />
-     <Compile Include="Assets\Scripts\NextButton.cs" />
-     <Compile Include="Assets\Scripts\SlingSnapping.cs" />
      <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft.shader" />
      <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft Scroll.shader" />
      <None Include="Assets\JMO Assets\WarFX\_Effects\MuzzleFlashes\!MuzzleFlash Differences.txt" />
@@ -407,34 +395,34 @@
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="BouncyCastle.Crypto">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\PackageCache\com.ucl.ubiq@c9ddf0fa52\Runtime\Voip\Implementations\Dotnet\Plugins\BouncyCastle.Crypto.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\PackageCache\com.ucl.ubiq@c9ddf0fa52\Runtime\Voip\Implementations\Dotnet\Plugins\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\PackageCache\com.ucl.ubiq@c9ddf0fa52\Runtime\Voip\Implementations\Dotnet\Plugins\websocket-sharp.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\PackageCache\com.ucl.ubiq@c9ddf0fa52\Runtime\Voip\Implementations\Dotnet\Plugins\websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.Logging.Abstractions">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\PackageCache\com.ucl.ubiq@c9ddf0fa52\Runtime\Voip\Implementations\Dotnet\Plugins\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\PackageCache\com.ucl.ubiq@c9ddf0fa52\Runtime\Voip\Implementations\Dotnet\Plugins\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="SIPSorcery">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\PackageCache\com.ucl.ubiq@c9ddf0fa52\Runtime\Voip\Implementations\Dotnet\Plugins\SIPSorcery.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\PackageCache\com.ucl.ubiq@c9ddf0fa52\Runtime\Voip\Implementations\Dotnet\Plugins\SIPSorcery.dll</HintPath>
     </Reference>
     <Reference Include="ReportGeneratorMerged">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="SIPSorceryMedia.Abstractions">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\PackageCache\com.ucl.ubiq@c9ddf0fa52\Runtime\Voip\Implementations\Dotnet\Plugins\SIPSorceryMedia.Abstractions.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\PackageCache\com.ucl.ubiq@c9ddf0fa52\Runtime\Voip\Implementations\Dotnet\Plugins\SIPSorceryMedia.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="DnsClient">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\PackageCache\com.ucl.ubiq@c9ddf0fa52\Runtime\Voip\Implementations\Dotnet\Plugins\DnsClient.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\PackageCache\com.ucl.ubiq@c9ddf0fa52\Runtime\Voip\Implementations\Dotnet\Plugins\DnsClient.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\PackageCache\com.ucl.ubiq@c9ddf0fa52\Runtime\Plugins\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\PackageCache\com.ucl.ubiq@c9ddf0fa52\Runtime\Plugins\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -803,130 +791,130 @@
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Ubiq.Voip.Implementations">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Ubiq.Voip.Implementations.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Ubiq.Voip.Implementations.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Ubiq.Voip.Implementations.Dotnet">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Ubiq.Voip.Implementations.Dotnet.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Ubiq.Voip.Implementations.Dotnet.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Management.Editor">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Subsystem.Registration">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Ubiq.Voip.Implementations.Factory">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Ubiq.Voip.Implementations.Factory.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Ubiq.Voip.Implementations.Factory.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Ubiq.Logging.Utf8Json">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Ubiq.Logging.Utf8Json.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Ubiq.Logging.Utf8Json.dll</HintPath>
     </Reference>
     <Reference Include="Ubiq">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Ubiq.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Ubiq.dll</HintPath>
     </Reference>
     <Reference Include="Ubiq.Voip.Implementations.Null">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Ubiq.Voip.Implementations.Null.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Ubiq.Voip.Implementations.Null.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core.Environments">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
     </Reference>
     <Reference Include="Ubiq.Editor">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Ubiq.Editor.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Ubiq.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Management">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Oculus.Editor">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Oculus">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
-        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+        <HintPath>C:\Users\Yawei Lu\Desktop\Animal_planet_git\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

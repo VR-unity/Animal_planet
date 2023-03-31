@@ -1,17 +1,40 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using Ubiq.Messaging;
+
 
 public class RetryButton : MonoBehaviour
 {
-    public void ResetLevel()
+    private bool Resetflag;
+    private NetworkContext context;
+    private struct Message
     {
-        int level = SceneManager.GetActiveScene().buildIndex;
-        // SceneManager.LoadScene($"Level {level + 1}");
-        SceneManager.LoadScene("backup_animalplanet");
+        public bool resetf;
+        public Message(bool Resetflag) {
+            this.resetf = Resetflag;
+        }
+    }
+    void Start()
+    {
+        context = NetworkScene.Register(this);
     }
 
-    public void ResetGame()
+    public void ProcessMessage(ReferenceCountedSceneGraphMessage message)
     {
-        SceneManager.LoadScene($"Level 1");
+        var data = message.FromJson<Message>();
+        Debug.Log(data.resetf);
+        if (data.resetf)
+        {
+            SceneManager.LoadScene("backup_animalplanet");
+            // Resetflag = false;
+        }
+    }
+
+
+    public void ResetLevel()
+    {
+        Resetflag = true;
+        context.SendJson(new Message(Resetflag));
+        SceneManager.LoadScene("backup_animalplanet");
     }
 }

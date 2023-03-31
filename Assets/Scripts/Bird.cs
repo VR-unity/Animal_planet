@@ -1,5 +1,8 @@
 ﻿using System.Collections;
 using UnityEngine;
+using Ubiq.Messaging;
+using Ubiq.Spawning;
+using Ubiq.XR;
 
 public class Bird : MonoBehaviour
 {
@@ -14,9 +17,57 @@ public class Bird : MonoBehaviour
     public float DestructionTime = 5f;
     private bool _isPressed;
     private bool _isFired;
+    private NetworkContext context;
+    private bool collisionflag;
+    public bool releaseflag;
+    private bool slingshotflag;
 
-    void FixedUpdate()
+    private struct Message
     {
+        public bool collisionf;
+        public bool releasef;
+        public bool slingshotf;
+        public Message(bool collisionflag, bool releaseflag, bool slingshotflag) {
+            this.collisionf = collisionflag;
+            this.releasef = releaseflag;
+            this.slingshotf = slingshotflag;
+        }
+    }
+
+    void Start()
+    {
+        context = NetworkScene.Register(this);
+    }
+    
+    public void ProcessMessage(ReferenceCountedSceneGraphMessage message)
+    {
+        var data = message.FromJson<Message>();
+
+        // releaseflag = data.releasef;
+        // collisionflag = data.collisionf;
+        // slingshotflag = data.slingshotf;
+        // Debug.Log(releaseflag);
+        if (data.collisionf)
+        {
+            BirdCollision.Play();
+            // collisionflag = false;
+        }
+        if (data.releasef)
+        {
+            SlingshotRelease.Play();
+            StartCoroutine(Release());
+            // releaseflag = false;
+        }
+        if (data.slingshotf)
+        {
+            Slingshot.Play();
+            // slingshotflag = false;
+        }
+    }
+
+    void Update()
+    {
+        context.SendJson(new Message(collisionflag, releaseflag, slingshotflag));
         // Debug.Log(_isPressed);
         if (_isPressed && !_isFired && !GameManager.Instance.IsLevelCleared)
         {
@@ -43,6 +94,7 @@ public class Bird : MonoBehaviour
             return;
         }
 
+        slingshotflag = true;
         _isPressed = true;
         Rb.isKinematic = true;
         Slingshot.Play();
@@ -62,6 +114,7 @@ public class Bird : MonoBehaviour
 
         GetComponent<TrailRenderer>().enabled = true;
         _isFired = true;
+        releaseflag = true;
         SlingshotRelease.Play();
         // Flying.Play();
         StartCoroutine(Release());
@@ -76,6 +129,7 @@ public class Bird : MonoBehaviour
             // Destroy(feathers, 2);
             if (!BirdCollision.isPlaying)
             {
+                collisionflag = true;
                 BirdCollision.Play();
             }
             GameManager.Instance.AddScore(Random.Range(5, 25) * 10, transform.position, Color.white);
@@ -85,7 +139,7 @@ public class Bird : MonoBehaviour
     IEnumerator Release()
     {
         yield return new WaitForSeconds(ReleaseTime);
-
+        
         Destroy(GetComponent<SpringJoint>());
         StartCoroutine(Explode());
     }
