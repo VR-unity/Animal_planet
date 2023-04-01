@@ -9,7 +9,6 @@ public class MyNetworkedObject : MonoBehaviour, IGraspable
 {
     // public NetworkId NetworkId { get; set; }
     private bool owner;
-    // public GameObject bird;
     public bool control;
     private Hand controller;
     Vector3 lastPosition;

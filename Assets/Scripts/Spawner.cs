@@ -6,10 +6,10 @@ using Ubiq.Spawning;
 
 public class Spawner : MonoBehaviour
 {
+    public NetworkId NetworkId { get; set; }
     public GameObject prefabitem;
     private NetworkContext context;
     private bool flag;
-    public int count;
 
     private struct Message
     {
@@ -31,9 +31,24 @@ public class Spawner : MonoBehaviour
     {
         var data = message.FromJson<Message>();
         if (data.f){
-            count += 1;
-            var Clone = Instantiate(prefabitem, new Vector3(-0.3f, 0.3f, -1f), Quaternion.identity);
-            Clone.name = count.ToString();
+            // var Clone = Instantiate(prefabitem, new Vector3(-0.3f, 0.3f, -1f), Quaternion.identity);
+            GameObject Clone = NetworkSpawnManager.Find(this).SpawnWithPeerScope(prefabitem);
+            Slingshot slingshot = GameObject.Find("sling").GetComponent<Slingshot>();
+            Clone.GetComponent<MyNetworkedObject>().slingshot = slingshot;
+            Clone.GetComponent<SlingSnapping>().Slingshot = slingshot;
+            if (Clone.CompareTag("sheep"))
+            {
+                Clone.GetComponent<SlingSnapping>().SlingshotBird = GameObject.Find("slingshot sheep");
+            }else if (Clone.CompareTag("duck"))
+            {
+                Clone.GetComponent<SlingSnapping>().SlingshotBird = GameObject.Find("slingshot DUCK");
+            }else if (Clone.CompareTag("cat"))
+            {
+                Clone.GetComponent<SlingSnapping>().SlingshotBird = GameObject.Find("slingshot cat");
+            }else if (Clone.CompareTag("penguin"))
+            {
+                Clone.GetComponent<SlingSnapping>().SlingshotBird = GameObject.Find("slingshot penguin");
+            }
         }
     }
 
@@ -53,8 +68,24 @@ public class Spawner : MonoBehaviour
     {
         flag = true;
         context.SendJson(new Message(flag));
-        count += 1;
-        var Clone = Instantiate(item, new Vector3(-0.3f, 0.3f, -1f), Quaternion.identity);
-        Clone.name = count.ToString();
+
+        // GameObject Clone = Instantiate(item, new Vector3(-0.3f, 0.3f, -1f), Quaternion.identity);
+        GameObject Clone = NetworkSpawnManager.Find(this).SpawnWithPeerScope(item);
+        Slingshot slingshot = GameObject.Find("sling").GetComponent<Slingshot>();
+        Clone.GetComponent<MyNetworkedObject>().slingshot = slingshot;
+        Clone.GetComponent<SlingSnapping>().Slingshot = slingshot;
+        if (Clone.CompareTag("sheep"))
+        {
+            Clone.GetComponent<SlingSnapping>().SlingshotBird = GameObject.Find("slingshot sheep");
+        }else if (Clone.CompareTag("duck"))
+        {
+            Clone.GetComponent<SlingSnapping>().SlingshotBird = GameObject.Find("slingshot DUCK");
+        }else if (Clone.CompareTag("cat"))
+        {
+            Clone.GetComponent<SlingSnapping>().SlingshotBird = GameObject.Find("slingshot cat");
+        }else if (Clone.CompareTag("penguin"))
+        {
+            Clone.GetComponent<SlingSnapping>().SlingshotBird = GameObject.Find("slingshot penguin");
+        }
     }
 }

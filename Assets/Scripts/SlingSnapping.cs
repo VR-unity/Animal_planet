@@ -1,10 +1,12 @@
 using System;
 using UnityEngine;
 using Ubiq.Messaging;
+using Ubiq.Spawning;
  
 
 public class SlingSnapping : MonoBehaviour
 {
+    // public NetworkId NetworkId { get; set; }
     public Collider myCollider;
     public float snapDistance = 1f;
     public Slingshot Slingshot;
@@ -34,6 +36,7 @@ public class SlingSnapping : MonoBehaviour
         if (data.creatf)
         {
             GameObject newbird = Instantiate(SlingshotBird, Slingshot.Hook.transform.position, Quaternion.identity);
+            // GameObject newbird = NetworkSpawnManager.Find(this).SpawnWithPeerScope(SlingshotBird);
             Slingshot.Bird = newbird;
             flag = true;
             Destroy(myCollider.gameObject);
@@ -57,6 +60,7 @@ public class SlingSnapping : MonoBehaviour
                     creat = true;
                     context.SendJson(new Message(creat));
                     GameObject newbird = Instantiate(SlingshotBird, SlingPoint, Quaternion.identity);
+                    // GameObject newbird = NetworkSpawnManager.Find(this).SpawnWithPeerScope(SlingshotBird);
                     Slingshot.Bird = newbird;
                     flag = true;
                     Destroy(myCollider.gameObject);
