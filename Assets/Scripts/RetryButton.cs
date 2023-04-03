@@ -22,11 +22,15 @@ public class RetryButton : MonoBehaviour
     public void ProcessMessage(ReferenceCountedSceneGraphMessage message)
     {
         var data = message.FromJson<Message>();
-        Debug.Log(data.resetf);
+        // Debug.Log(data.resetf);
         if (data.resetf)
         {
+            Transform father = GameObject.Find("Spawn Manager").transform;
+            for (int i = 0; i < father.childCount; i++)
+            {
+                Destroy(father.GetChild(i).gameObject);   
+            }
             SceneManager.LoadScene("backup_animalplanet");
-            // Resetflag = false;
         }
     }
 
@@ -35,6 +39,11 @@ public class RetryButton : MonoBehaviour
     {
         Resetflag = true;
         context.SendJson(new Message(Resetflag));
+        Transform father = GameObject.Find("Spawn Manager").transform;
+        for (int i = 0; i < father.childCount; i++)
+        {
+            Destroy(father.GetChild(i).gameObject);   
+        }
         SceneManager.LoadScene("backup_animalplanet");
     }
 }
