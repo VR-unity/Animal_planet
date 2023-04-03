@@ -53,15 +53,6 @@ public class Spawner : MonoBehaviour
     }
 
     
-    // private void FixedUpdate()
-    // {
-    //     Debug.Log(flag);
-    //     if(flag == true)
-    //     {
-    //         context.SendJson(new Message(flag, prefabitem));
-    //     }
-
-    // }
 
 
     public void Spawn(GameObject item)

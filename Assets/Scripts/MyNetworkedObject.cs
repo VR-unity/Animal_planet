@@ -21,12 +21,9 @@ public class MyNetworkedObject : MonoBehaviour, IGraspable
         public Quaternion rotation;
 
         public bool o;
-
-        // public int name;
         public Message(Transform transform, bool owner) {
             this.position = transform.position;
             this.rotation = transform.rotation;
-            // this.name = n;
             this.o = owner;
         }
     }
@@ -50,7 +47,6 @@ public class MyNetworkedObject : MonoBehaviour, IGraspable
         }
         Debug.Log(data.o);
         if ((data.o || owner || slingshot.Bird != null))
-        // && (int.Parse(this.gameObject.name) == data.name))
         {
             transform.position = data.position;
             transform.rotation = data.rotation;
@@ -61,18 +57,12 @@ public class MyNetworkedObject : MonoBehaviour, IGraspable
 
     private void FixedUpdate()
     {
-        // if (owner)
-        // {
-            // 4. Send transform update messages if we are the current 'owner'
         if(lastPosition != transform.position || lastRotation != transform.rotation)
         {
             lastPosition = transform.position;
             lastRotation = transform.rotation;
-            // Debug.Log(int.Parse(transform.name));
             context.SendJson(new Message(transform, owner));
         }
-            
-        // }
     }
 
     private void LateUpdate() {

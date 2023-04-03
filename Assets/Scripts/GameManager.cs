@@ -69,39 +69,6 @@ public class GameManager : MonoBehaviour
         floatingText.UpdateText(amount.ToString(), textColor);
     }
 
-    // public void SetNewBird()
-    // {
-    //     ActiveTurn = false;
-    //     RemainingBirds--;
-    //     if (RemainingBirds >= 0)
-    //     {
-    //         GameObject bird = Instantiate(SlingshotBird, new Vector3(Slingshot.Hook.transform.position.x, Slingshot.Hook.transform.position.y, Slingshot.Hook.transform.position.z), Quaternion.identity);
-    //         bird.GetComponent<Bird>().DestructionTime = BirdDestructionTime;
-    //         Slingshot.Bird = bird;
-    //         // Camera.main.GetComponent<MainCamera>().Bird = bird;
-
-    //         foreach (StillBird stillBird in FindObjectsOfType<StillBird>())
-    //         {
-    //             Destroy(stillBird.gameObject);
-    //         }
-
-    //         if (RemainingBirds > 0)
-    //         {
-    //             for (int i = 0; i < RemainingBirds; i++)
-    //             {
-    //                 GameObject stillBird = Instantiate(StillBird, new Vector3(0, 0, 0), Quaternion.identity);
-    //                 stillBird.transform.position = new Vector3(-0.5f * (i + 0.5f), 0, -1.19f);
-    //                 if (i % 2 == 0)
-    //                 {
-    //                     stillBird.GetComponent<StillBird>().WaitForSeconds = 0.45f;
-    //                 }
-    //             }
-    //         }
-    //     }
-
-    //     FinishLevel();
-    // }
-
     private void FinishLevel()
     {
         if (IsLevelCleared)
