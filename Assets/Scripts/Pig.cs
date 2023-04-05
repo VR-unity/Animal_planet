@@ -10,10 +10,6 @@ public class Pig : MonoBehaviour
         {
             Destroy();
         }
-        // else if (GameObject.FindGameObjectWithTag("Building").GetComponent<StartBuildingButton>().startbuilding == true && collision.relativeVelocity.magnitude > 0)
-        // {
-        //     this.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX|RigidbodyConstraints.FreezePositionZ;
-        // }
     }
 
     void Update() 

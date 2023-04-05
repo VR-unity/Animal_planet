@@ -50,7 +50,6 @@ public class SlingSnapping : MonoBehaviour
         if (data.creatf)
         {
             GameObject newbird = Instantiate(SlingshotBird, Slingshot.Hook.transform.position, Quaternion.identity);
-            // GameObject newbird = NetworkSpawnManager.Find(this).SpawnWithPeerScope(SlingshotBird);
             Slingshot.Bird = newbird;
             flag = true;
             Destroy(myCollider.gameObject);
@@ -70,11 +69,9 @@ public class SlingSnapping : MonoBehaviour
             {
                 if ((myCollider.CompareTag("sheep")||myCollider.CompareTag("duck")||myCollider.CompareTag("cat")||myCollider.CompareTag("penguin"))&&(Slingshot.Bird == null))
                 {
-                    // Destroy(myCollider.gameObject);
                     creat = true;
                     context.SendJson(new Message(creat));
                     GameObject newbird = Instantiate(SlingshotBird, SlingPoint, Quaternion.identity);
-                    // GameObject newbird = NetworkSpawnManager.Find(this).SpawnWithPeerScope(SlingshotBird);
                     
                     Slingshot.Bird = newbird;
                     flag = true;
