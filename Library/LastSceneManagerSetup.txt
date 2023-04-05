@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/backup_animalplanet.unity
+- path: Assets/Scenes/backup_animalplanet.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
