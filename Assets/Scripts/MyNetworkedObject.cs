@@ -45,7 +45,6 @@ public class MyNetworkedObject : MonoBehaviour, IGraspable
         {
             this.gameObject.GetComponent<Rigidbody>().useGravity = true;
         }
-        Debug.Log(data.o);
         if ((data.o || owner || slingshot.Bird != null))
         {
             transform.position = data.position;

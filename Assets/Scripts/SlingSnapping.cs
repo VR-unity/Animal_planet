@@ -27,6 +27,20 @@ public class SlingSnapping : MonoBehaviour
         context = NetworkScene.Register(this);
         myCollider = GetComponent<Collider>();
         snapDistance = 1f;
+        Slingshot =  GameObject.Find("sling").GetComponent<Slingshot>();
+         if (myCollider.gameObject.CompareTag("sheep"))
+        {
+            SlingshotBird = GameObject.Find("slingshot sheep");
+        }else if (myCollider.gameObject.CompareTag("duck"))
+        {
+            SlingshotBird = GameObject.Find("slingshot DUCK");
+        }else if (myCollider.gameObject.CompareTag("cat"))
+        {
+            SlingshotBird = GameObject.Find("slingshot cat");
+        }else if (myCollider.gameObject.CompareTag("penguin"))
+        {
+            SlingshotBird = GameObject.Find("slingshot penguin");
+        }
     
     }
 
@@ -61,6 +75,7 @@ public class SlingSnapping : MonoBehaviour
                     context.SendJson(new Message(creat));
                     GameObject newbird = Instantiate(SlingshotBird, SlingPoint, Quaternion.identity);
                     // GameObject newbird = NetworkSpawnManager.Find(this).SpawnWithPeerScope(SlingshotBird);
+                    
                     Slingshot.Bird = newbird;
                     flag = true;
                     Destroy(myCollider.gameObject);

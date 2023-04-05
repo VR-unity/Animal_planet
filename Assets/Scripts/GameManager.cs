@@ -120,7 +120,7 @@ public class GameManager : MonoBehaviour
                 NewHighscore.SetActive(true);
             }
 
-            LevelWon.transform.Find("Level Text").GetComponent<Text>().text = "FINISHED!";
+            LevelWon.transform.Find("Level Text").GetComponent<Text>().text = "WIN!";
             LevelWon.transform.Find("Score Amount Text").GetComponent<Text>().text = score.ToString();
             HighscoreText.text = highscore.ToString();
             LevelWon.transform.Find("Highscore Amount Text").GetComponent<Text>().text = highscore.ToString();

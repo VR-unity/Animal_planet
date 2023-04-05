@@ -22,7 +22,6 @@ public class RetryButton : MonoBehaviour
     public void ProcessMessage(ReferenceCountedSceneGraphMessage message)
     {
         var data = message.FromJson<Message>();
-        // Debug.Log(data.resetf);
         if (data.resetf)
         {
             Transform father = GameObject.Find("Spawn Manager").transform;

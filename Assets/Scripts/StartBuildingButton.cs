@@ -23,7 +23,6 @@ public class StartBuildingButton : MonoBehaviour
     public void ProcessMessage(ReferenceCountedSceneGraphMessage message)
     {
         var data = message.FromJson<Message>();
-        // Debug.Log(data.resetf);
         if (data.building)
         {
             startbuilding = true;
@@ -40,7 +39,6 @@ public class StartBuildingButton : MonoBehaviour
         else{
             startbuilding = false;
         }
-        // Debug.Log(startbuilding);
         context.SendJson(new Message(startbuilding));
         
     }

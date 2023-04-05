@@ -1,14 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Ubiq.Messaging;
+using Ubiq.Spawning;
 
-public class Spawner1 : MonoBehaviour
+public class Spawner1 : MonoBehaviour, INetworkSpawnable
 {
+    public NetworkId NetworkId { get; set; }
     public GameObject itemPrefab;
+    private NetworkContext context;
+
+     void Start()
+    {
+        context = NetworkScene.Register(this);
+    }
 
     public void Spawn1(GameObject item)
     {
-        Instantiate(item, new Vector3(3.5f, 0.2f, 1.5f),Quaternion.identity);
-
+        GameObject Clone = NetworkSpawnManager.Find(this).SpawnWithPeerScope(item);
     }
 }
