@@ -1,7 +1,7 @@
 # Animal_planet
 Project Title: Animal Planet
 
-Project Description: This VR project creates an interactive scene for users to experience a building and throwing game. The game is mainly divided into two parts: cooperative obstacle course building and throwing game. When multiple users enter the scene together, they can obtain the parts they want and cooperate to build their own ghost enemy and obstacle course scene during the setup process. Once the setup is completed, they can enter the game process. Users can freely choose different animal weapons with different attack abilities and use slingshots to destroy ghost enemies to win the game. According to the destruction of obstacles, a final score would be given for this round of game.
+Project Description: This VR project creates an interactive scene for users to experience a building and throwing game. The project is mainly divided into two parts: cooperative obstacle course building and throwing game. When multiple users enter the scene together, they can obtain the parts they want and cooperate to build their own ghost enemy and obstacle course scene during the setup process. Once the setup is completed, they can enter the game process. Users can freely choose different animal weapons with different attack abilities and use slingshots to destroy ghost enemies to win the game. According to the destruction of obstacles, a final score would be given for this round of game.
 
 Some screen captures of the final work: 
 The whole scene is as follow.
